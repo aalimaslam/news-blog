@@ -1,0 +1,3 @@
+https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=QUERY 
+
+API_KEY = "pub_5355cda8be99bd3edb245b30506047063897"

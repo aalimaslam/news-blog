@@ -1,0 +1,24 @@
+<%- include("./partials/nav") %>
+
+<div class="row text-center">
+<% datas.forEach(e=>{ %>
+<a href="<%=e.link%>" class="col-12 col-md-4 text-dark text-decoration-none">
+
+    <div class="card rounded m-2 p-3" style="cursor: pointer;">
+        <div class="card-image">
+            <img src="<%= e.imageUrl %>" class="rounded w-100"  />
+        </div>
+        <div class="card-info">
+            <div class="card-title fs-3 fw-bold my-2"><u><%= e.title %></u></div>
+            <div class="description text-muted">
+                Publish : <%= e.formatTime %> <br>
+
+                Country : <%= e.country %>
+            </div>
+        </div>
+    </div>
+</a>
+<% }) %>
+</div>
+
+<%- include("./partials/footer") %>
